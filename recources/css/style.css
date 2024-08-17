@@ -37,27 +37,17 @@ html, body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header nav ul {
-    list-style: none;
+.header .links{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    margin: auto;
 }
-.header nav ul li {
-    margin-right: 20px;
-}
-.header nav ul li:last-child {
-    margin-right: 0;
-    position: absolute;
-    right: 15px;
-}
-.header nav ul li a,
-.header nav ul li button {
+.header a, .header button{
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
@@ -66,14 +56,23 @@ html, body {
     background: none;
     border: none;
     cursor: pointer;
+    margin: 0 10px;
 }
-.header nav ul li button {
+.header .translate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+.header button{
     background-color: #211b18;
     color: #ede2db;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
-.header nav ul li a:hover,
-.header nav ul li button:hover {
-    opacity: 0.7; 
+.header button:hover, .header a:hover{
+    opacity: 0.7;
 }
 .main{
     display: flex;
@@ -95,7 +94,6 @@ html, body {
 .main p{
     font-size: 18px;
     max-width: 800px;
-
 }
 .blog-paragraph{
     display: flex;
@@ -130,39 +128,73 @@ html, body {
 
 }
 @media (min-width: 768px) {
+    .header .menu {
+        flex-direction: row;
+    }
+    .header .menu li {
+        margin-right: 25px;
+    }
+    .header .menu li:last-child {
+        margin-bottom: 0;
+    }
+    .header .menu li a,
+    .header .menu li button {
+        width: 100%;
+        text-align: center;
+    }
+    .header .menu li button {
+        position: static;
+        margin-top: 10px;
+    }
     .main {
         flex-direction: row;
         text-align: left;
     }
-
     .main img {
         max-width: 40%;
         margin-right: 20px;
         margin-bottom: 0;
     }
-
     .main h1 {
         font-size: 60px;
     }
-
     .main p {
         font-size: 24px;
     }
-
     .blog-paragraph {
         flex-direction: row;
         gap: 20px;
     }
-
     .blog-item h2 {
         font-size: 30px;
     }
-
     .blog-item p {
         font-size: 18px;
     }
-
     .blog-paragraph a {
         font-size: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .header .menu li {
+        margin-right: 50px;
+    }
+    .main img {
+        max-width: 30%;
+    }
+    .main h1 {
+        font-size: 80px;
+    }
+    .main p {
+        font-size: 28px;
+    }
+    .blog-item h2 {
+        font-size: 36px;
+    }
+    .blog-item p {
+        font-size: 20px;
+    }
+    .blog-paragraph a {
+        font-size: 36px;
     }
 }
