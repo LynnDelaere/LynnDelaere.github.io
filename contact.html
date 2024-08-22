@@ -12,26 +12,47 @@
 <body>
     <div class="container" id="container">
         <div class="header" id="header">
-            <nav>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <!--<li><a href="projects.html">Projects</a></li>-->
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><button onclick="translate()">EN/NL</button></li>
-                </ul>
-            </nav>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <!--<a href="projects.html">Projects</a>-->
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="translate">
+                <button onclick="translate()">EN/NL</button>
+            </div>
         </div>
         <div class="main" id="contact">
             <div class="content">
                 <h1>Contact Me</h1>
                 <p>Feel free to reach out to me if you have any questions or comments. I would love to hear from you!
                 </p>
+                <a href="https://www.linkedin.com/in/lynn-delaere-29130a27b/" target="_blank">
+                    <img class="icon" src="recources/icons/linkedinIcon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/LynnDelaere" target="_blank">
+                    <img class="icon" src="recources/icons/githubIcon.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/lynn.delaere" target="_blank">
+                    <img class="icon" src="recources/icons/facebookIcon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/lynndelaere/" target="_blank">
+                    <img class="icon" src="recources/icons/instagramIcon.png" alt="Instagram"></a>
+                <a href="https://discordapp.com/users/HawkDeathSin" target="_blank">
+                    <img class="icon" src="recources/icons/discordIcon.png" alt="Discord"></a>
+            </div>
+            <div class="contact-form">
+                <form action="contact.php" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
         <div class="footer" id="footer">
-            <p>&copy; 2021 Lynn's Journey.</p>
+            <p>&copy; 2024 Lynn's Journey. All rights reserved.</p>
         </div>
     </div>
 </body>
