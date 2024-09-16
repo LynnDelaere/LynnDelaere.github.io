@@ -88,20 +88,16 @@ html, body {
     justify-content: center;
     text-align: center;
 }
-.main img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 20px 0 20px;
-}
 .main h1{
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
+    padding: 0px 20px 0px 20px;
 }
 .main p{
     font-size: 18px;
     max-width: 800px;
     margin: 0;
-    /* white-space: pre-line; */
+    padding: 0px 20px 0px 20px;
 }
 .blog-paragraph{
     display: flex;
@@ -114,9 +110,16 @@ html, body {
     max-width: 600px;
     width: 100%;
 }
+.blog-item h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
 .blog-item p{
     font-size: 16px;
     font-weight: normal;
+    text-align: left;
 }
 .blog-paragraph a{
     font-size: 24px;
@@ -133,11 +136,22 @@ html, body {
     width: 100%;
     bottom: 0;
 }
+#blog-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
 #blog-post .content h1{
-    font-size: 26px;
+    font-size: 30px;
 }
 #blog-post .content p{
-    font-size: 16px;
+    font-size: 20px;
+}
+#blog-post .content a{
+    font-style: italic;
+    text-decoration: none;
 }
 .contact-form{
     display: flex;
@@ -218,21 +232,19 @@ html, body {
         margin-right: 50px;
     }
     .main img {
-        max-width: 30%;
+        max-width: 25%;
+        max-height: 10%;
     }
     .main h1 {
-        font-size: 80px;
+        font-size: 40px;
     }
     .main p {
-        font-size: 28px;
+        font-size: 22px;
     }
     .blog-item h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
     .blog-item p {
-        font-size: 20px;
-    }
-    .blog-paragraph a {
-        font-size: 36px;
+        font-size: 18px;
     }
 }
