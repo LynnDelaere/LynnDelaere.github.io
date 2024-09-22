@@ -99,6 +99,10 @@ html, body {
     margin: 0;
     padding: 0px 20px 0px 20px;
 }
+.main img{
+    max-width: 80%;
+    margin: 20px;
+}
 .blog-paragraph{
     display: flex;
     flex-direction: column;
