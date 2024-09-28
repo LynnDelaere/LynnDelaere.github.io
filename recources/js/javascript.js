@@ -1,3 +1,4 @@
+/* Age calculation */
 const birthDate = '1994-07-20';
 
 function calculateAge(birthDate) {
