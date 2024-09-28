@@ -8,13 +8,19 @@
     <title>Lynn's Journey</title>
     <link rel="stylesheet" href="recources\css\style.css">
 </head>
+
 <body>
     <div class="container" id="container">
         <div class="header" id="header">
             <div class="links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="blog.html">Blog</a>
+                <div class="collapsible-blog">
+                    <a href="javascript:void(0)" class="blog-toggle">Blog ▼</a> <!-- Toggle button -->
+                    <div class="blog-content" id="blogContent">
+                    </div>
+                </div>
+                <!-- <a href="blog.html">Blog</a> -->
                 <!--<a href="projects.html">Projects</a>-->
                 <a href="contact.html">Contact</a>
             </div>
@@ -22,29 +28,72 @@
         <div class="main" id="blog-post">
             <div class="content">
                 <h1 id="post1">Choosing projects</h1>
-                <p><i>19 September '24</i><br></p>
-                <p>Here it goes, my first blog post is official &#128513;!<br></p>
-                <p>Today we had an info session about the projects we can choose from in our the first semester. 
-                    The big theme of most of the projects is Smart Greenhouse-how can we make a greenhouse self sustainable?
+                <p><i>19 September '24</i></p>
+                <p><b>Here it goes, my first blog post is official &#128513;!</b></p>
+                <p>Today I had an info session about the projects we can choose from in our the first semester.
+                    The big theme of most of the projects is Smart Greenhouse-how can we make a greenhouse self
+                    sustainable?
                     Some examples are: greenhouse water system, greenhouse energy, greenhouse sensoring, ect.</p>
-                <p>There are also two other projects that are not related to the Smart Greenhouse theme. 
-                    One of them is a project about smart cameras to grow watercress by collecting data and make an AI model to predict the growth of the watercress.</p>
-                <p>The other project involves making CoMoveIT, an intelligent wheelchair steering system, compatible with Linx motor-steering-based wheelchairs. 
-                    This project is in collaboration with the company CoMoveIT. I will put a link to their website down below if you want to check it out.</p>
-                <p>So as you can see, there are a lot of interesting projects to choose from. We have to send our top 3 choices to the school by the end of the week.
-                I haven't read all the details about every project yet, so thats the plan for this week. 
-                I've set a personal deadline to have my top 3 choices by Thursday evening.</p>
-                <p>For now I'll end this post by sharing my top 3 choices at the moment: 
+                <p>There are also two other projects that are not related to the Smart Greenhouse theme.
+                    One of them is a project about smart cameras to grow watercress by collecting data and make an AI
+                    model to predict the growth of the watercress.</p>
+                <p>The other project involves making CoMoveIT, an intelligent wheelchair steering system, compatible
+                    with Linx motor-steering-based wheelchairs.
+                    This project is in collaboration with the company CoMoveIT. I will put a link to their website down
+                    below if you want to check it out.</p>
+                <p>So as you can see, there are a lot of interesting projects to choose from. I have to send in my top 3
+                    choices to the school by the end of the week.
+                    I haven't read all the details about every project yet, so thats the plan for this week.
+                    I've set a personal deadline to have my top 3 choices by Thursday evening.</p>
+                <p>For now I'll end this post by sharing my top 3 choices at the moment:
                 <ol>
                     <li>Watercress AI</li>
                     <li>CoMoveIT interface</li>
                     <li>Greenhouse sensoring</li>
-                </ol>          
+                </ol>
                 </p>
-                <p>Here's the link to <a href="https://comoveit.com/" target="_blank" rel="noopener noreferrer" >CoMoveIT</a>.</p>
-                <!-- <h1 id="post2">Blog Post 2</h1>
-                <p>...</p>
-                <h1 id="post3">Blog Post 3</h1>
+                <p>Here's the link to <a href="https://comoveit.com/" target="_blank"
+                        rel="noopener noreferrer">CoMoveIT</a>.</p>
+                <h1 id="post2">Rise of the watercress</h1>
+                <p><i>27 September '24</i></p>
+                <p>The first week of school has officially wrapped up, and what a week it has been! With a few new
+                    teachers and bunch of
+                    interesting new courses, things are off to an exiting start. Some of the classes felt like a review
+                    of things i had seen before,
+                    like when to use let, const, or var in JavaScript, or the basics of C++ programming But there were
+                    also a few things I hand't encountered before,
+                    which made it all the more exciting.</p>
+                <p>For example, in my IoT Devices course, I learned about a much easier way to assign a function to a
+                    specific IO pin.
+                    We used a program called STM32CubeMX, where you can select the microcontroller you're working with,
+                    configure the pins,
+                    and then generate the code to use in Keil µVision. The whole process was so simple and intuitive.
+                    Now, I'm wandering if it will stay that way?</p>
+                <p>Since I'm in my second year, I have a more elective courses than last year. One of them is AI
+                    programming in Python, where I'll learn how to build and train an AI model. To develop a good AI
+                    model, I'll need to know how to collect
+                    and interpret data effectively. I'm really excited to dive into AI and everything that comes with
+                    it.
+                    There's so much potential in this field, and I can't wait to learn more.</p>
+                <p><b>Now, for the moment you've all been waiting for: What project did I get?</b></p>
+                <p>Drummroll please...</p>
+                <p>I'm on the Watercress AI project team! This week, we had our first meeting with the project leader,
+                    who gave us a lot of insight
+                    into what we'll be working on. He's a researcher at the school and has extensive knowledge in AI,
+                    machine leaning, and deep learning.</p>
+                <p>The goal of the project is to create a standalone device that can predict the growth stage of
+                    watercress plants based on a picture. We'll be using a Rasberry Pi
+                    with a camera and a display to show the predicted age of the watercress.</p>
+                <p><b>The plan</b></p>
+                <p>To get accurate date, we'll plant several batches of watercress at home. Every day, we'll take pictures
+                    from different angles, in various lighting conditions, and with different cameras. Then, we'll label those photos
+                    and divide them into three data sets: a training set to teach the AI model, a validations set to fine-tune it, and a test set to 
+                    evaluate how well the model performs.</p>
+                <p>Every Thursday, we have a full day dedicated to the project. This week's goal was to brainstorm and come up with a solid action plan
+                    for the next few weeks. There's a lot of work ahead, but I'm feeling optimistic! We've already tried out the Rasberry Pi and the camera,
+                    so we're comfortable with the technology. I can't wait to see how this project unfolds.</p>
+                <p>Stay tuned for more updates on the Watercress AI project!</p>
+                <!-- <h1 id="post3">Blog Post 3</h1>
                 <p>...</p> -->
             </div>
         </div>
@@ -53,4 +102,5 @@
         </div>
     </div>
 </body>
+
 </html>
